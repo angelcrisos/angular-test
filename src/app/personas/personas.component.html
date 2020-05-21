@@ -1,0 +1,31 @@
+<div class="card border-primary mb-3" >
+  <div class="card-header">Personas</div>
+  <div class="card-body text-primary">
+    <h5 class="card-title">Listado de Personas</h5>
+    <div class="my-2 text-left">
+      <button type="button" class="btn btn-rounded btn-primary" [routerLink] = "['/personas/form']">Crear Persona</button>
+    </div>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Fecha</th>
+          <th>Edad</th>
+          <th>Dias</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let persona of personas">
+          <td>{{persona.name}}</td>
+          <td>{{persona.lastName}}</td>
+          <td>{{persona.dateOfBirth}}</td>
+          <td>{{persona.age}}</td>
+          <td *ngIf="persona.birthdayDays != 365">Faltan {{persona.birthdayDays}} días para su cumpleaños</td>
+          <td *ngIf="persona.birthdayDays == 365">Feliz cumpleaños, un poema para usted : {{persona.poem.content}}</td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+</div>
