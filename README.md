@@ -18,3 +18,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Ejecutar localmente
+
+Luego de bajar los fuentes, pararse en el proyecto y ejecutar `ng install` para bajar dependencias
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
